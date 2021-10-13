@@ -11,7 +11,7 @@ class WeddingForm extends React.Component {
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.handleInputChange = this.handleInputChange.bind(this);
 		
-		this._recaptchaRef = React.createRef();
+		this._reCaptchaRef = React.createRef();
 		
 		this.state = {
 			weddingPresence: false,
@@ -113,7 +113,6 @@ class WeddingForm extends React.Component {
 			value = value == "true" ? true : false;
 		}
 		const name = target.name;
-		console.log(name)
 		this.setState({
 			...this.state,
 			[name]: value,
@@ -203,7 +202,7 @@ class WeddingForm extends React.Component {
 							<Button className="WeddingForm-btn">Prześlij</Button>
 							<Label className="WeddingForm-feedback">Dziękujemy</Label>
 							<ReCAPTCHA
-							  ref={this.recaptchaRef}
+							  ref={this._reCaptchaRef}
 							  size="invisible"
 							  sitekey="6Ldh5MMcAAAAAA39DR1uysz73OVnor_z-BpZwc4q"
 							/>
