@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.00150e9b.chunk.css",
-    "main.js": "/static/js/main.c480fc27.chunk.js",
-    "main.js.map": "/static/js/main.c480fc27.chunk.js.map",
+    "main.css": "/static/css/main.284d3a99.chunk.css",
+    "main.js": "/static/js/main.b55e360d.chunk.js",
+    "main.js.map": "/static/js/main.b55e360d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2543925d.js",
     "runtime-main.js.map": "/static/js/runtime-main.2543925d.js.map",
     "static/css/2.9fd9923e.chunk.css": "/static/css/2.9fd9923e.chunk.css",
@@ -12,9 +12,9 @@
     "static/js/3.034f692c.chunk.js.map": "/static/js/3.034f692c.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.9fd9923e.chunk.css.map": "/static/css/2.9fd9923e.chunk.css.map",
-    "static/css/main.00150e9b.chunk.css.map": "/static/css/main.00150e9b.chunk.css.map",
+    "static/css/main.284d3a99.chunk.css.map": "/static/css/main.284d3a99.chunk.css.map",
     "static/js/2.c1335986.chunk.js.LICENSE.txt": "/static/js/2.c1335986.chunk.js.LICENSE.txt",
-    "static/media/styles.css": "/static/media/header_img.ed49a783.JPG",
+    "static/media/styles.css": "/static/media/DancingScript-Medium.c76ea376.ttf",
     "static/media/Karol.ec4b8696.jpg": "/static/media/Karol.ec4b8696.jpg",
     "static/media/Karolinka.6311ac1b.jpg": "/static/media/Karolinka.6311ac1b.jpg",
     "static/media/Kuligow_kwiecien_2020.d03f6b6c.jpeg": "/static/media/Kuligow_kwiecien_2020.d03f6b6c.jpeg",
@@ -22,6 +22,7 @@
     "static/media/chocholowska1.7f2f0172.jpeg": "/static/media/chocholowska1.7f2f0172.jpeg",
     "static/media/chocholowska2.2902de89.jpeg": "/static/media/chocholowska2.2902de89.jpeg",
     "static/media/guests.8307637f.png": "/static/media/guests.8307637f.png",
+    "static/media/header_img.ed49a783.JPG": "/static/media/header_img.ed49a783.JPG",
     "static/media/jaworzyna.8e35130e.jpg": "/static/media/jaworzyna.8e35130e.jpg",
     "static/media/lamy.ab0e50d1.jpg": "/static/media/lamy.ab0e50d1.jpg",
     "static/media/malolaczniak1.cd6a15ea.jpg": "/static/media/malolaczniak1.cd6a15ea.jpg",
@@ -39,7 +40,7 @@
     "static/js/runtime-main.2543925d.js",
     "static/css/2.9fd9923e.chunk.css",
     "static/js/2.c1335986.chunk.js",
-    "static/css/main.00150e9b.chunk.css",
-    "static/js/main.c480fc27.chunk.js"
+    "static/css/main.284d3a99.chunk.css",
+    "static/js/main.b55e360d.chunk.js"
   ]
 }

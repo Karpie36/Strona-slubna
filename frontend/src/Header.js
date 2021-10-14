@@ -1,5 +1,6 @@
 import React from 'react';
 import pattern from './assets/Images/pattern.png';
+import header_img from './assets/Images/header_img.JPG';
 
 class Header extends React.Component {
 	constructor(props) {
@@ -7,6 +8,17 @@ class Header extends React.Component {
 	}
 	
 	componentDidMount() {
+		const imageLoader = new Image();
+		imageLoader.src = header_img;
+
+		imageLoader.onload = () => {
+		  this.showHeader();
+		};
+
+	}
+	
+	showHeader() {
+		document.querySelector('.App-Header').style.backgroundImage = `url(${header_img})`;
 		setTimeout(() => {
 			document.querySelector('.Heart-container').style.display = "none";
 			document.querySelector('.App').style.opacity = 1.0;
@@ -19,7 +31,7 @@ class Header extends React.Component {
 			setTimeout(() => {
 				document.querySelector('.AboutUs-img').style.display = "block";
 			}, 1000)
-		}, 2000)
+		}, 500)
 	}
 	
 	render() {
