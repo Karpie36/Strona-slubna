@@ -1,6 +1,7 @@
 import React from 'react';
-import pattern from './assets/Images/pattern.png';
 import header_img from './assets/Images/header_img.JPG';
+import pattern from './assets/Images/pattern.png';
+
 
 class Header extends React.Component {
 	constructor(props) {
@@ -31,7 +32,7 @@ class Header extends React.Component {
 			setTimeout(() => {
 				document.querySelector('.AboutUs-img').style.display = "block";
 			}, 1000)
-		}, 500)
+		}, 10)
 	}
 	
 	render() {
