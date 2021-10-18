@@ -32,7 +32,7 @@ class Header extends React.Component {
 			setTimeout(() => {
 				document.querySelector('.AboutUs-img').style.display = "block";
 			}, 1000)
-		}, 10)
+		}, 500)
 	}
 	
 	render() {
