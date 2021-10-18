@@ -4,6 +4,7 @@ phone_regex = (
     r"( )*(?:\+48|\+48 |)(?:(([0-9]{3}-[0-9]{3}-[0-9]{3})|([0-9]{9})|([0-9]{3} [0-9]{3} [0-9]{3})))( )*"
 )
 
+
 class GuestSchema(Schema):
     wedding_presence = fields.Boolean(required=True)
     guests_names = fields.Str(
