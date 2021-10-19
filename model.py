@@ -11,7 +11,7 @@ class Guest(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     guests_names = db.Column(db.String(150))
     email = db.Column(db.String(150))
-    phone = db.Column(db.String(150))
+    phone = db.Column(db.String(20))
     wedding_presence = db.Column(db.Boolean, default=False)
     covid_vaccination_number = db.Column(db.String(50))  # TODO: to powinien być typ Numeric
     diet = db.Column(db.String(150))
