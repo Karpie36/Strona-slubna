@@ -27,7 +27,7 @@ class Timer extends React.Component {
 	}
 	
 	getTimeUntil(deadline) {
-		const time = Date.parse(deadline) - Date.parse(new Date());
+		let time = Date.parse(deadline) - Date.parse(new Date());
 		let additionalHour = 0;
 		if (Date.parse("October, 31, 2021, GMT+0100") - Date.parse(new Date()) > 0 || Date.parse("March, 27, 2022, GMT+0100") - Date.parse(new Date()) < 0) {
 			additionalHour = -1;
