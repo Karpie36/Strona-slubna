@@ -34,11 +34,13 @@ class Timer extends React.Component {
 		}
 		if (time < 0) {
 			this.setState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-		} 
+		}
 		else {
+			const additionalHourInMiliseconds = additionalHour * 60 * 60 * 1000;
+			time += additionalHourInMiliseconds;
 			const seconds = Math.floor((time / 1000) % 60);
 			const minutes = Math.floor((time / 1000 / 60) % 60);
-			const hours = Math.floor((time / (1000 * 60 * 60)) % 24) + additionalHour;
+			const hours = Math.floor((time / (1000 * 60 * 60)) % 24);
 			const days = Math.floor(time / (1000 * 60 * 60 * 24));
 			this.setState({ days, hours, minutes, seconds });
 		}
