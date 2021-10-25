@@ -438,3 +438,9 @@
 		width: 240px;
 	}
 }
+
+@media (prefers-color-scheme: dark) {
+	.AboutUs-text {
+		margin: 60px auto;
+	}
+}
