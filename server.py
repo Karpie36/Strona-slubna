@@ -6,10 +6,9 @@ from flask_cors import CORS, cross_origin
 
 app = Flask(__name__, static_folder="frontend/build", static_url_path='')
 CORS(app)
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL').replace('postgres://', 'postgresql://')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-# uwaga, to musi być po zainicjalizowaniu aplikacji!
 from model import db
 
 db.app = app
@@ -26,7 +25,6 @@ def serve():
 @cross_origin()
 def post_guest_info():
     received_value = request.get_json(force=True)
-    # app.logger.debug('received value: %s', str(received_value))
     from validation import GuestSchema
     schema = GuestSchema()
     print(type(received_value))
@@ -38,10 +36,10 @@ def post_guest_info():
         guests_names = result["guests_names"]
         email = result["email"]
         phone = result["phone"]
-        covid_vaccination_number = result["covid_vaccination_number"]  # TODO: to powinna być liczba
+        covid_vaccination_number = result["covid_vaccination_number"]
         diet = result["diet"]
-        from_hotel_to_church = result["from_hotel_to_church"] # TODO: to jest źle obsługiwane w UI
-        from_church_to_wedding = result["from_church_to_wedding"] # TODO: to jest źle obsługiwane w UI
+        from_hotel_to_church = result["from_hotel_to_church"]
+        from_church_to_wedding = result["from_church_to_wedding"]
         transport_from_wedding = result["transport_from_wedding"]
     except Exception as e:
         app.logger.error('Cant parse request, error: %s', str(e))
