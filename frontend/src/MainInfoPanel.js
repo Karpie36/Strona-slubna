@@ -28,7 +28,7 @@ class MainInfoPanel extends React.Component {
 						text={"Bardzo prosimy o zrezygnowanie ze zwyczaju kupowania kwiatów ciętych. Zamiast kwiatów większą przyjemność sprawi nam np. butelka Waszego ulubionego wina."}
 					/>
 					<MainInfo title={"Transport"}
-						text={"Organizujemy transport autokarem:\n- przed mszą ślubną z Hotelu Panorama do kościoła\n- po mszy ślubnej z kościoła do karczmy\n- w nocy z karczmy do hotelu (planujemy 3 tury)\n- w nocy z karczmy do Warszawy (planujemy 3 tury)\nW celu organizacji transportu osoby chętne prosimy o zaznaczenie w formularzu odpowiednich opcji.\nInformacje nt. transportu będziemy aktualizować po otrzymaniu od Was odpowiedzi."}
+						text={"Organizujemy transport autokarem:\n- przed mszą ślubną z Hotelu Panorama do kościoła\n- po mszy ślubnej z kościoła do karczmy\n- w nocy z karczmy do hotelu (planujemy 3 tury)\n- w nocy z karczmy do hotelu/Warszawy (planujemy 3 tury)\nW celu organizacji transportu osoby chętne prosimy o zaznaczenie w formularzu odpowiednich opcji.\nTransport do Warszawy będzie zatrzymywał się przy metrze Politechnika."}
 					/>
 				</Container>
 			</div>
